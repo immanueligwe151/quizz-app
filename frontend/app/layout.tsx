@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +25,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="min-h-screen bg-[var(--quizz-background)] text-[var(--quizz-text-colour)]">
+        {/* Header */}
+        <header className="flex items-center justify-center py-6">
+          <Image
+            src="https://i.postimg.cc/wB2119ky/quizz-app-logo.png"
+            alt="QUIZZ"
+            width={180}
+            height={60}
+            priority
+          />
+        </header>
+
+        {/* Page content */}
+        <main className="flex justify-center px-4">
+          {children}
+        </main>
       </body>
     </html>
   );

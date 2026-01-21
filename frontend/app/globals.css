@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --quizz-background: #3F4B7D;
+  --quizz-button-colour: #2869FF;
+  --quizz-text-colour: #FFEF6A;
+  --quizz-button-hover-colour: #96B6FF;
 }
 
 @theme inline {
