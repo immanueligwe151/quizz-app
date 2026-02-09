@@ -14,31 +14,31 @@ export default async function Home() {
   }
 
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <div className="bg-[var(--quizz-background)] p-10 rounded-2xl shadow-xl w-[420px] text-center">
+    <main className="min-h-screen flex flex-col flex-start items-center  bg-[var(--quizz-background)]">
+      <div className="w-[420px] text-center">
         {/* Heading */}
-        <h1 className="text-[var(--quizz-text-colour)] font-bold mb-8">Welcome to Quizz</h1>
+        <h1 className="text-[var(--quizz-text-colour)] font-bold text-5xl">Welcome to Quizz</h1>
+      </div>
 
-        {/* Buttons */}
-        <div className="flex gap-4 justify-center mb-4">
-          <Link
-            href="/login"
-            className="bg-blue-500 hover:bg-blue-600 text-yellow-300 font-semibold px-6 py-3 rounded-lg transition"
-          >
-            Log in
-          </Link>
+      {/* Buttons */}
+      <div className="flex flex-col md:flex-row flex-none flex-wrap gap-8 mb-4">
+        <Link
+          href="/login"
+          className="bg-[var(--quizz-button-colour)] hover:bg-[var(--quizz-button-hover-colour)] text-[var(--quizz-text-colour)] font-semibold px-6 py-3 rounded-lg transition"
+        >
+          Log in
+        </Link>
 
-          <Link
-            href="/signup"
-            className="bg-blue-500 hover:bg-blue-600 text-yellow-300 font-semibold px-6 py-3 rounded-lg transition"
-          >
-            Sign Up
-          </Link>
-        </div>
+        <Link
+          href="/signup"
+          className="bg-[var(--quizz-button-colour)] hover:bg-[var(--quizz-button-hover-colour)] text-[var(--quizz-text-colour)] font-semibold px-6 py-3 rounded-lg transition"
+        >
+          Sign Up
+        </Link>
 
         <Link
           href="/join"
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-yellow-300 font-semibold px-10 py-3 rounded-lg transition"
+          className="bg-[var(--quizz-button-colour)] hover:bg-[var(--quizz-button-hover-colour)] text-[var(--quizz-text-colour)] font-semibold px-6 py-3 rounded-lg transition"
         >
           Join a Game
         </Link>

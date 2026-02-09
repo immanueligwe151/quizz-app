@@ -25,9 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-[var(--quizz-background)] text-[var(--quizz-text-colour)]">
+      <body className="min-h-screen text-[var(--quizz-text-colour)]">
         {/* Header */}
-        <header className="flex items-center justify-center py-6">
+        <header className="flex items-center justify-center py-6 bg-[var(--quizz-background)]">
           <Image
             src="https://i.postimg.cc/wB2119ky/quizz-app-logo.png"
             alt="QUIZZ"
@@ -38,7 +38,7 @@ export default function RootLayout({
         </header>
 
         {/* Page content */}
-        <main className="flex justify-center px-4">
+        <main className="flex flex-start grid justify-items-center px-4 bg-[var(--quizz-background)]">
           {children}
         </main>
       </body>
