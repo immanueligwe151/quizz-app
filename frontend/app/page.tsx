@@ -30,7 +30,7 @@ export default async function Home() {
         </Link>
 
         <Link
-          href="/signup"
+          href="/create-account"
           className="bg-[var(--quizz-button-colour)] hover:bg-[var(--quizz-button-hover-colour)] text-[var(--quizz-text-colour)] font-semibold px-6 py-3 rounded-lg transition"
         >
           Sign Up
