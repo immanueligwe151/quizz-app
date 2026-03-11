@@ -2,12 +2,14 @@ type FloatingInputProps = {
   label: string;
   type?: string;
   name: string;
+  onChange?: (e: any) => void;
 };
 
 export default function FloatingInput({
   label,
   type = "text",
   name,
+  onChange,
 }: FloatingInputProps) {
   return (
     <div className="relative w-full">
@@ -16,6 +18,7 @@ export default function FloatingInput({
         name={name}
         id={name}
         placeholder=" "
+        onChange={onChange}
         className="
           peer
           w-full
